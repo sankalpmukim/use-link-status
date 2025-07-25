@@ -1,0 +1,31 @@
+{
+  "name": "use-link-status",
+  "version": "0.1.0",
+  "description": "A React hook and Next.js Link wrapper for tracking navigation status in Next.js 15+ apps.",
+  "keywords": [
+    "react",
+    "nextjs",
+    "hook",
+    "link",
+    "status",
+    "navigation"
+  ],
+  "homepage": "https://github.com/YOUR_GITHUB_USERNAME/use-link-status",
+  "bugs": {
+    "url": "https://github.com/YOUR_GITHUB_USERNAME/use-link-status/issues"
+  },
+  "author": "YOUR NAME <YOUR_EMAIL> (https://github.com/YOUR_GITHUB_USERNAME)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YOUR_GITHUB_USERNAME/use-link-status.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "peerDependencies": {
+    "next": ">=15.0.0"
+  }
+}

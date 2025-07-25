@@ -1,5 +1,42 @@
 # use-link-status
 
+A React hook and Next.js Link wrapper for tracking navigation status in Next.js 15+ apps.
+
+## Installation
+
+```bash
+npm install use-link-status
+```
+
+## Usage
+
+Wrap your app with the provider:
+
+```tsx
+import { LinkStatusProvider } from "use-link-status";
+
+export default function App({ children }) {
+  return <LinkStatusProvider>{children}</LinkStatusProvider>;
+}
+```
+
+Use the hook and NextLink in your components:
+
+```tsx
+import { useLinkStatus, NextLink } from "use-link-status";
+
+const { isPending } = useLinkStatus({ prefix: "/dashboard" });
+
+<NextLink href="/dashboard">Dashboard</NextLink>;
+{
+  isPending && <span>Loading...</span>;
+}
+```
+
+---
+
+[GitHub](https://github.com/YOUR_GITHUB_USERNAME/use-link-status) · [Issues](https://github.com/YOUR_GITHUB_USERNAME/use-link-status/issues)
+
 We have to build a simple react component library that can be used in next.js 15 onwards (next.js is going to need to be added as a peer dependency.)
 
 The `npm-package.md` file gives instructions to create a high quality best practices npm package

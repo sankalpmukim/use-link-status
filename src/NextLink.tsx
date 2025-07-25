@@ -1,13 +1,10 @@
 import * as React from 'react';
 
-import NextLink, { LinkProps } from 'next/link';
-
+import Link, { type LinkProps } from 'next/link.js';
 import { useLinkStatusContext } from './context.js';
-import { usePathname } from 'next/navigation';
+import { usePathname } from 'next/navigation.js';
 
-export const Link: React.FC<LinkProps & { children: React.ReactNode }> = (
-  props,
-) => {
+export const NextLink: React.FC<LinkProps> = (props) => {
   const { setPendingPathName } = useLinkStatusContext();
   const pathname = usePathname();
 
@@ -22,9 +19,5 @@ export const Link: React.FC<LinkProps & { children: React.ReactNode }> = (
     if (props.onClick) props.onClick(e);
   };
 
-  return (
-    <NextLink {...props} onClick={handleClick}>
-      {props.children}
-    </NextLink>
-  );
+  return <Link.default {...props} onClick={handleClick}></Link.default>;
 };

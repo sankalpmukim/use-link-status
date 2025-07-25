@@ -7,7 +7,6 @@
     "resolveJsonModule": true,
     "moduleDetection": "force",
     "isolatedModules": true,
-    "verbatimModuleSyntax": true,
     "strict": true,
     "noUncheckedIndexedAccess": true,
     "noImplicitOverride": true,
@@ -17,6 +16,12 @@
     "sourceMap": true,
     "declaration": true,
     "declarationMap": true,
-    "jsx": "react-jsx"
-  }
+    "types": ["next","react","react-dom"],
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "next/*": ["node_modules/next/*"]
+    }
+  },
+  "include": ["src", "next-env.d.ts"]
 } 

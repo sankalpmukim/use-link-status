@@ -10,14 +10,14 @@
     "status",
     "navigation"
   ],
-  "homepage": "https://github.com/YOUR_GITHUB_USERNAME/use-link-status",
+  "homepage": "https://github.com/sankalpmukim/use-link-status",
   "bugs": {
-    "url": "https://github.com/YOUR_GITHUB_USERNAME/use-link-status/issues"
+    "url": "https://github.com/sankalpmukim/use-link-status/issues"
   },
-  "author": "YOUR NAME <YOUR_EMAIL> (https://github.com/YOUR_GITHUB_USERNAME)",
+  "author": "Sankalp Mukim <sankalpmukim@gmail.com> (https://github.com/sankalpmukim)",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/YOUR_GITHUB_USERNAME/use-link-status.git"
+    "url": "git+https://github.com/sankalpmukim/use-link-status.git"
   },
   "files": [
     "dist"
@@ -31,9 +31,14 @@
   "main": "dist/index.js",
   "license": "MIT",
   "peerDependencies": {
-    "next": ">=15.0.0"
+    "next": "^14.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   },
   "devDependencies": {
-    "typescript": "^5.8.3"
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "next": "^14.0.0",
+    "typescript": "^5.0.0"
   }
 }

@@ -22,6 +22,11 @@
   "files": [
     "dist"
   ],
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write .",
+    "check-format": "prettier --check ."
+  },
   "type": "module",
   "main": "dist/index.js",
   "license": "MIT",
